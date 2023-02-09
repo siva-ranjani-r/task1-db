@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <style>
+            .but
+            {
+                margin:30px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>shop</h1>
+        <table border="1">
+            <h2>products list</h2>
+            <tr>
+                <th>name</th>
+                <th>price</th>
+            </tr>
+            {%for i in data%}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.price}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        <a href="/order"><button class="but">order</button></a>
+        <a href="/register"><button class="but">addUser</button></a>
+        <a href="/show"><button class="but">ordered list</button></a>
+    </body>
+</html>
